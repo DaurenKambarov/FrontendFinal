@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARFIELD</title>
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel = "icon" href = "C:\Users\1daur\OneDrive\Изображения\Saved Pictures\R.png" type="image/x-icon/"></link>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"></link>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<header class="Header">
+    <div class="container-fluid"></div>
+    <div class="header_inner">
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" id="logo">
+                    <img src="https://i.pinimg.com/originals/17/e8/65/17e865ec37eb0fd3b69e8763ba524218.jpg" alt="Logo" width="50" height="30" class="d-inline-block align-text-top">
+                    CarField
+                  </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav" id="navbar">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="home" aria-current="page" href="./index.html" target="_blank">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" id="AboutUs">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="./payment.html" id="Assignments">Payment</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="./Flags Game/Game.html" id="Game">Game</a>
+                  </li>
+                  <li class="nav-item">
+                    <div class="dropdown" id="login">
+                        <a class="btn  dropdown-toggle" id="login" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Login
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="./Login.html" target="_blank">Login In</a></li>
+                          <li><a class="dropdown-item" href="./Sign Up.html" target="_blank">Sign Up</a></li>
+                        </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </div>
+</header>
+<body style="background-color: black;">
+    <h2 class="guideText">There's the guide, how use your card</h2>
+    <div class="container" id="videoPlayer">
+        <video id="fullscreen-video" autoplay controls>
+            <source src="PayPalGuide.mp4" type="video/mp4">
+            <source src="PayPalGuide.mp4" type="video/ogg">
+        </video>
+        <button onclick="openFullscreen();" class="playVideo">Fullscreen</button>
+    </div>
+    <h2 class="playQUIZ">Pass the quiz to get Some bonus!</h2> 
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#carQuizModal" id="playCarQuiz">
+        Take Car Quiz
+      </button>
+          <div class="modal fade" id="carQuizModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Car Quiz</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form id="quizForm">
+                    <div id="question1">
+                      <p>1. What is the top speed of a Bugatti Veyron?</p>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q1" id="q1Option1" value="option1">
+                        <label class="form-check-label" for="q1Option1">
+                          a) 250 mph
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q1" id="q1Option2" value="option2">
+                        <label class="form-check-label" for="q1Option2">
+                          b) 300 mph
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q1" id="q1Option3" value="option3">
+                        <label class="form-check-label" for="q1Option3">
+                          c) 350 mph
+                        </label>
+                      </div>
+                    </div>
+                    <div id="question2">
+                        <p>2. Which car company produces the Mustang?</p>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q2" id="q2Option1" value="option1">
+                          <label class="form-check-label" for="q2Option1">
+                            a) Ford
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q2" id="q2Option2" value="option2">
+                          <label class="form-check-label" for="q2Option2">
+                            b) Chevrolet
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q2" id="q2Option3" value="option3">
+                          <label class="form-check-label" for="q2Option3">
+                            c) Dodge
+                          </label>
+                        </div>
+                      </div>
+                      <div id="question3">
+                        <p>3. What does the acronym SUV stand for?</p>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q3" id="q3Option1" value="option1">
+                          <label class="form-check-label" for="q3Option1">
+                            a) Sports Utility Vehicle 
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q3" id="q3Option2" value="option2">
+                          <label class="form-check-label" for="q3Option2">
+                            b) Super Urban Vehicle
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q3" id="q3Option3" value="option3">
+                          <label class="form-check-label" for="q3Option3">
+                            c) Speedy Underwater Vessel
+                          </label>
+                        </div>
+                      </div>
+                      <div id="question4">
+                        <p>4. Which country is home to the famous luxury car brand Rolls-Royce?</p>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q4" id="q4Option1" value="option1">
+                          <label class="form-check-label" for="q4Option1">
+                            a) United States 
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q4" id="q4Option2" value="option2">
+                          <label class="form-check-label" for="q4Option2">
+                            b) United Kingdom 
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q4" id="q4Option3" value="option3">
+                          <label class="form-check-label" for="q4Option3">
+                            c) Germany
+                          </label>
+                        </div>
+                      </div>
+                      <div id="question5">
+                        <p>5. In car terminology, what does MPG stand for?</p>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q5" id="q5Option1" value="option1">
+                          <label class="form-check-label" for="q5Option1">
+                            a) Mega Power Generator
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q5" id="q5Option2" value="option2">
+                          <label class="form-check-label" for="q5Option2">
+                            b) Motor Performance Gauge
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q5" id="q5Option3" value="option3">
+                          <label class="form-check-label" for="q5Option3">
+                            c) Miles Per Gallon
+                          </label>
+                        </div>
+                      </div>
+                      <div id="question6">
+                        <p>6. Which electric car company is known for its Model S, Model 3, and Model X?</p>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q6" id="q6Option1" value="option1">
+                          <label class="form-check-label" for="q6Option1">
+                            a) Nissan
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q6" id="q6Option2" value="option2">
+                          <label class="form-check-label" for="q6Option2">
+                            b) Tesla 
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q6" id="q6Option3" value="option3">
+                          <label class="form-check-label" for="q6Option3">
+                            c) Chevrolet
+                          </label>
+                        </div>
+                      </div>
+                      <div id="question7">
+                        <p>7. Which Formula 1 team is associated with the famous driver Lewis Hamilton?</p>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q7" id="q7Option1" value="option1">
+                          <label class="form-check-label" for="q7Option1">
+                            a) Ferrari
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q7" id="q7Option2" value="option2">
+                          <label class="form-check-label" for="q7Option2">
+                            b) Red Bull Racing
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q7" id="q7Option3" value="option3">
+                          <label class="form-check-label" for="q7Option3">
+                            c) Mercedes 
+                          </label>
+                        </div>
+                      </div>
+                      <div id="question8">
+                        <p>8. Which Japanese automaker is renowned for its reliable and fuel-efficient vehicles?</p>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q8" id="q8Option1" value="option1">
+                          <label class="form-check-label" for="q8Option1">
+                            a) Honda 
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q8" id="q8Option2" value="option2">
+                          <label class="form-check-label" for="q8Option2">
+                            b) Hyundai
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q8" id="q8Option3" value="option3">
+                          <label class="form-check-label" for="q8Option3">
+                            c) Subaru
+                          </label>
+                        </div>
+                      </div>
+                      <div id="question9">
+                        <p>9. What iconic car model did James Bond famously drive in many of the early films?</p>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q9" id="q9Option1" value="option1">
+                          <label class="form-check-label" for="q9Option1">
+                            a) Aston Martin 
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q9" id="q9Option2" value="option2">
+                          <label class="form-check-label" for="q9Option2">
+                            b) Ferrari
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q9" id="q9Option3" value="option3">
+                          <label class="form-check-label" for="q9Option3">
+                            c) Porsche
+                          </label>
+                        </div>
+                      </div>
+                      <div id="question6">
+                        <p>10. Which Italian luxury sports car manufacturer produces models like the Huracán and Aventador?</p>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q10" id="q10Option1" value="option1">
+                          <label class="form-check-label" for="q10Option1">
+                            a) Maserati 
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q10" id="q10Option2" value="option2">
+                          <label class="form-check-label" for="q10Option2">
+                            b) Lamborghini
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q10" id="q10Option3" value="option3">
+                          <label class="form-check-label" for="q10Option3">
+                            c) Ferrari
+                          </label>
+                        </div>
+                      </div>
+                <div class="modal-footer">
+                    <div id="notification" class="notification"></div>
+                  <button type="button" class="btn btn-primary" onclick="checkQuizAnswer()">Submit Answer</button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div> 
+          </div>
+          <div class="container" id="formForData">
+            <form id="regForm" action="">
+                <h1>Buy Car:</h1>
+                <p>To buy Car please input your data</p>
+                <!-- One "tab" for each step in the form: -->
+                <div class="tab">Name:
+                  <p><input placeholder="First name..." oninput="this.className = ''"></p>
+                  <p><input placeholder="Last name..." oninput="this.className = ''"></p>
+                </div>
+                
+                <div class="tab">Contact Info:
+                  <p><input placeholder="E-mail..." oninput="this.className = ''"></p>
+                  <p><input placeholder="Phone..." oninput="this.className = ''"></p>
+                </div>
+                
+                <div class="tab">Birthday:
+                  <p><input placeholder="dd" oninput="this.className = ''"></p>
+                  <p><input placeholder="mm" oninput="this.className = ''"></p>
+                  <p><input placeholder="yyyy" oninput="this.className = ''"></p>
+                </div>
+                
+                <div class="tab">Bank Card Payment:
+                    <p><input placeholder="Card Number..." oninput="this.className = ''"></p>
+                    <p><input placeholder="Expiration Date (MM/YY)..." oninput="this.className = ''"></p>
+                    <p><input placeholder="CVV..." oninput="this.className = ''"></p>
+                  </div>
+                
+                <div style="overflow:auto;">
+                  <div style="float:right;">
+                    <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                    <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                  </div>
+                </div>
+                
+                <!-- Circles which indicate the steps of the form: -->
+                <div style="text-align:center;margin-top:40px;">
+                  <span class="step"></span>
+                  <span class="step"></span>
+                  <span class="step"></span>
+                  <span class="step"></span>
+                </div>
+            </form>
+        </div>
+        <script src="payment.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>           
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

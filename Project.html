@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CARFIELD</title>
+        <link rel="stylesheet" href="Project_style.css">
+        <link rel = "icon" href = "C:\Users\1daur\OneDrive\Изображения\Saved Pictures\R.png" type="image/x-icon/"></link>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"></link>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </head>
+    <body>
+      <header class="Header">
+        <div class="container"></div>
+        <div class="header_inner">
+            <nav class="navbar navbar-expand-lg bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#" id="logo">
+                        <img src="https://i.pinimg.com/originals/17/e8/65/17e865ec37eb0fd3b69e8763ba524218.jpg" alt="Logo" width="50" height="30" class="d-inline-block align-text-top">
+                        CarField
+                      </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav" id="navbar">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="home" aria-current="page" href="./index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" id="AboutUs">About Us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./payment.html" id="pay">Payment</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./Flags Game/Game.html" id="Game">Game</a>
+                      </li>
+                      <li class="nav-item">
+                        <div class="dropdown" id="login">
+                            <a class="btn  dropdown-toggle" id="login" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Login
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="./Login.html" target="_blank">Login In</a></li>
+                              <li><a class="dropdown-item" href="./Sign Up.html" target="_blank">Sign Up</a></li>
+                            </ul>
+                          </div>
+                      </li>
+                      <li class="nav-item">
+                        <button type="button" class="btn btn-primary">
+                          Notifications <span class="badge badge-dark">4</span>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </header>
+    <div class="Intro">
+      <div class="container">
+        <div class="IntroInner">
+          <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="https://ferrari-avilon.ru/media/models/images/model_v8_img1.png" class="d-block w-100" alt="buggati">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 style="color: white;">First slide label</h5>
+                  <p style="color: orange;">Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://ferrari-avilon.ru/media/models/images/631f431c482135455e01f05c-ferrari-purosangue-crop-line-up.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 style="color: white;">Second slide label</h5>
+                  <p style="color: orange;">Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://cdn.trackdays.co.uk/cdn-cgi/image/format=auto,fit=contain/imgs/driving-experiences/lamborghini-driving-experiences.png" class="d-block w-100" alt="..." id="lamb">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 style="color: white;">Third slide label</h5>
+                  <p style="color: orange;">Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+  </div>
+
+<section class="Catalog-of-sportcars">
+  <div class="main_body">
+      <div class="main_inner">
+        <div class="card-group">
+          <div class="card bg-dark">
+            <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/image
+            s?q=tbn:ANd9GcRDVRn2mxO6y7ubthFZxACFp7i2LAjw87AlNCAfL6pjt5PaRk6u2R3VNG-W0r_i6sQN6VI&usqp=CAU" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <a href="./payment.html" target="_blank" class="btn btn-primary">Buy</a>
+            </div>
+          </div>
+          <div class="card bg-dark">
+            <img class="card-img-top" src="https://i.pinimg.com/originals/d5/2d/8a/d52d8abd1b55a721b0bfdc34a2214648.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <a href="./payment.html" target="_blank" class="btn btn-primary">Buy</a>
+            </div>
+          </div>
+          <div class="card bg-dark">
+            <img class="card-img-top" src="https://www.pngkit.com/png/detail/56-568105_white-sport-car-png-super-cars-no-background.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              <a href="./payment.html" target="_blank" class="btn btn-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-group">
+          <div class="card bg-dark">
+            <img class="card-img-top" src="https://www.freeiconspng.com/thumbs/car-front-png/bmw-car-front-png-30.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <a href="./payment.html" target="_blank" class="btn btn-primary">Buy</a>
+            </div>
+          </div>
+          <div class="card bg-dark">
+            <img class="card-img-top" src="https://t4.ftcdn.net/jpg/00/55/60/57/360_F_55605757_rnE7F5ngGIYTrSlAsrfwVoS6YnZNKMi2.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <a href="./payment.html" target="_blank" class="btn btn-primary">Buy</a>
+            </div>
+          </div>
+          <div class="card bg-dark">
+            <img class="card-img-top" src="https://ferrari-avilon.ru/media/models/images/5dd552850cf6995f44de91fa-line-up-ferrari-monza-sp2.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              <a href="./payment.html" target="_blank" class="btn btn-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+        
+        <script>
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+              return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+            </script>
+    </body>
+</html>

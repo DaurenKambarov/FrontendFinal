@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.guideText{
+    color: orange;
+}
+.playVideo{
+    background: red;
+    color: white;
+    margin-bottom: 520px;
+    position: static;
+}
+#videoPlayer{
+    height: 500px;
+    width: 500px;
+    position: static;
+    margin: 50px;
+    margin-left: -50px;
+}
+#fullscreen-video{
+    width: 400px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: rgb(35, 32, 32);
+    color: wheat;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+.navbar-nav{
+    margin-left: 950px;
+}
+#logo{
+    color:white
+} 
+#home, #AboutUs, #Assignments, #Game, #login {
+    color: white; 
+}
+.playQUIZ{
+    margin-top: -265px;
+    color: orange;
+}
+#regForm {
+    background-color: orange;
+    margin: 100px auto;
+    padding: 40px;
+    width: 70%;
+    min-width: 300px;
+  }
+  
+  /* Style the input fields */
+  input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid wheat;
+  }
+  
+  /* Mark input boxes that gets an error on validation: */
+  input.invalid {
+    background-color: orange;
+  }
+  
+  /* Hide all steps by default: */
+  .tab {
+    display: none;
+  }
+#formForData{
+    background: url(texture.avif);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 550px;
+    text-align: center;
+}
+  /* Make circles that indicate the steps of the form: */
+  .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: orange;
+    border: 2px;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  /* Mark the active step: */
+  .step.active {
+    opacity: 1;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: #04AA6D;
+  }

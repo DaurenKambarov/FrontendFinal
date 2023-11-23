@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lab</title>
+    </head>
+
+    <body>
+        <div class="Calculator">
+            <form> 
+                First Number: <input type="text" id="firstNum"> <br>
+                Second Number: <input type="text" id="secondNum"> </br>
+            </form>
+            <button type="button" onclick="multiply()">Multiply</button> 
+            <button type="button" onclick="divide()">Divide</button>
+            <p>The result is: </p>
+            <p id="result"></p>
+        </div>
+
+        <script>
+            function multiply(){
+                var x = (parseInt(document.getElementById("firstNum").value * document.getElementById("secondNum").value))
+                document.getElementById("result").innerText = x
+            }
+
+            function divide(){
+                var x = (parseInt(document.getElementById("firstNum").value / document.getElementById("secondNum").value))
+                document.getElementById("result").innerText = x
+            }
+
+        </script>
+    </body>
+</html>
+function findLarge(num1, num2, num3){
+
+
+    if (isNaN(num1) || isNaN(num2) || isNaN(num3)) {
+        alert("Please enter valid integers.");
+    } else {
+        console.log("The largest integer is: " + Math.max(num1, num2, num3).toString());
+    }
+    }
+    
+    function sumOfInt(num1, num2){
+    
+        if(num1 == num2){
+            console.log((num1 + num2) * 3);
+        }
+        else{
+            console.log(num1 + num2);
+        }
+    }
+    function findNearest(num1, num2){
+        if(Math.abs(100 - num1) < Math.abs(100 - num2)){
+            console.log(num1);
+        }
+        else{
+            console.log(num2);
+        }
+    }
+    
+    function halfOfText(text){
+        
+        if(text.length % 2 == 0){
+            console.log(text.slice(0, text.length/2));
+        }
+        else{
+            console.log(text);
+        }
+    }
+    //-----------------------------------------------------------------------------------------------------------------------------------
+    // Practice 1, 2. Week: 7
+    function getSum(num1, num2){
+        return parseFloat(num1 + num2);
+    }
+    
+    function isSquare(num1){
+        let result = Math.sqrt(num1);
+        if(Number.isInteger(result)){
+            return "True";
+        }
+        else{
+            return "False";
+        }
+    }
+    
+    function greeting(name, second_name, age){
+        console.log("Hello my name is " + name + " " + second_name + " and I am" + " " + age + " years old.");
+    }
+    
+    function minOfNum(num1, num2, num3){
+        if(num1 < num2 && num1 < num3){
+            return num1;
+        }
+        else if(num2 < num1 && num2 < num3){
+            return num2;
+        }
+        else{
+            return num3;
+        }
+    }
+    
+    function evenOddChecker(num1, num2, num3){
+        if(num1 % 2 == 1 && num2 % 2 == 1 && num3 % 2 == 1){
+            return "Odd";
+        }
+        else if(num1 % 2 == 0 && num2 % 2 == 0 && num3 % 2 == 0){
+            return "Even";
+        }
+        else {
+            return "Odd/Even"
+        }
+    }
+    
+    function numRange(num1, num2, num3){
+        if(num3 < num2 && num3 > num1){
+            return "In range";
+        }
+        else{
+            return "Out of range";
+        }
+    }
+    function stringOfNum(num1, num2, num3){
+        result = ""
+        for(let i = num1; i <= num2; i += num3){
+            result += i + " ";
+        }
+        console.log(result);
+    }
+    
+    function sumOFRange(start, end) {
+        var arr = "";
+        let result = 0;
+        for (let i = start; i <= end; i += 1) {
+            arr += i.toString() + ",";
+        }
+         arr = arr.split(",");
+        for (let j = arr.length-2; j >= 0; j -= 1) {
+            for (let i = j; i >= 0; i -= 1) {
+                result += parseInt(arr[i]);
+            }
+         }
+         return result;
+        
+      }
+    
+    function sumOfRange2(num1, num2){
+        result = 0;
+        for(let i = num1; i <= num2; i++){
+            result += i; 
+        }
+        return result;
+    }
+    
+    function sumOfSeries(n) {
+        if (n <= 0) {
+          return "0.00";
+        }
+      
+        let sum = 0;
+        for (let i = 1; i <= n; i++) {
+          sum += 1 / (i * i);
+        }
+      
+    
+        const roundedSum = sum.toFixed(2);
+      
+        return roundedSum.toString();
+    }
+    
+    function countDigits(number) {
+        const numStr = Math.abs(number).toString();
+        return numStr.length;
+    }
+    function aboutMySelf(myName, myGroup){
+        alert("My name is: " + myName + "\n" + "My group is: " + myGroup)
+    }
+    function currentDay(){
+        let today = new Date();
+            var day = today.getDay();
+            var dayOfWeek = today.getD
+            var year = today.getFullYear();
+            console.log("Year: " + year + "\n" + "Today is: ");
+    }

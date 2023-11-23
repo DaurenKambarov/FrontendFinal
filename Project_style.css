@@ -1,0 +1,57 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.Header{
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    position: static;
+    margin: 0;
+}
+#home, #AboutUs, #pay, #Game, #login {
+    color: white; 
+}
+.navbar-nav{
+    margin-left: 900px;
+}
+.Intro{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background: rgb(55, 52, 52);
+    background-size: cover;
+    background-size: 100%;
+    display: flex;
+}
+
+h5{
+    color: white;
+}
+.container{
+    width: 100%;
+    margin: 0;
+}
+.IntroInner{
+    width: 900px;
+    margin: auto;
+}
+.main_body{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background: black;
+    background-size: cover;
+    background-size: 100%;
+    display: flex;
+}
+#lamb{
+    width: 900px;
+}
+.card-text{
+    color: orange;
+}
